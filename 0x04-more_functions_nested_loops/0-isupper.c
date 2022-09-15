@@ -1,16 +1,14 @@
-#include "holberton.h"
-#include <stdio.h>
-
+#include "main.h"
 /**
- * _isupper - Check if paramter c represents an uppercase letter.
- * @c: Int representing a character
- * Return: Always 0.
+ * print_numbers - prints the numbers from 0 to 9
+ *
+ * Return: numbers
  */
-int _isupper(int c)
+void print_numbers(void)
 {
-	if (c >= 65 && c <= 90)
-	{
-		return (1);
-	}
-	return (0);
+	int num;
+
+	for (num = 48 ; num <= 57 ; num++)
+		_putchar(num);
+	_putchar('\n');
 }
