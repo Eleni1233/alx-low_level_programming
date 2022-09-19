@@ -1,21 +1,24 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * puts2 - prints every other character of a string
- * @str: the string to print
+ * puts2 - prints one char out of 2
+ * @str: type
  *
  */
+
 void puts2(char *str)
 {
-	int i;
-	int j;
+	int i, j = 0;
 
-	for (i = 0 ; str[i] != '\0' ; i++)
+	while (str[i] != '\0')
 	{
-		;
+		i++;
 	}
-	for (j = 0 ; j < i ; j = j + 2)
+
+	while (j < i)
 	{
 		_putchar(str[j]);
+		j = j + 2;
 	}
 	_putchar('\n');
 }
